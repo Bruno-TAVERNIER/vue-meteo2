@@ -1,0 +1,18 @@
+{
+  "villes": [
+    {
+      "nom": "Gournay-en-Bray",
+      "dept": 76,
+      "lat": 49.4759,
+      "lon": 1.7253,
+      "id": 2
+    },
+    {
+      "nom": "Canet",
+      "dept": 34,
+      "lat": 43.597,
+      "lon": 3.4822,
+      "id": 4
+    }
+  ]
+}

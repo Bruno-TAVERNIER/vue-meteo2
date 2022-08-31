@@ -6,7 +6,7 @@
     <p>Pression: {{ pression }}</p>
     <p>Indice UV: {{ uv }}</p>
     <router-link :to="{name: 'ville', params: {id: ville.nom}}">Prévisions</router-link>
-    <button @click="suppVille(ville)">X</button>
+    <button @click="suppVille(ville)" title="supprimer cette ville">X</button>
   </div>
 </template>
 
@@ -27,7 +27,7 @@
     }, 
     methods: {
       suppVille(lieu) {
-        this.$emit('supVille', lieu);
+        if(confirm('Voulez vous vraiment supprimer cette ville ?')) this.$emit('supVille', lieu);
       }
     },
     created() {
